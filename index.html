@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>Credit Card Ui Design</title>-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="logo">
+          <img data-logo src="visa.svg" class="logo1" alt="">
+          
+        </span>
+        <img class="chip" src="./img/chip (1).png" alt="">
+        
+        <img class="antena" src="./img/antena.svg" alt="">
+
+          </header>
+
+      <div class="card-details">
+        <div class="name-number">
+          <h6>Card Number</h6>
+          <div data-connected-inputs class="cc-inputs horizontal-input-stack">
+            <input type="tel" maxlength="4" aria-label="Credit Card First 4 Digits" id="cc-1" required pattern="[0-9]{4}" />
+            <input type="tel" maxlength="4" aria-label="Credit Card Second 4 Digits" required pattern="[0-9]{4}" />
+            <input type="tel" maxlength="4" aria-label="Credit Card Third 4 Digits" required pattern="[0-9]{4}" />
+            <input type="tel" maxlength="4" aria-label="Credit Card Last 4 Digits" required pattern="[0-9]{4}" />
+          </div>         
+           <input type="text" placeholder="Name" class="name" id="name">
+        </div>
+        
+            <input type="text" placeholder="CVC" class="cvc">
+        
+        <div class="valid-date">
+          <h6 class="validate-head">Validate Thru</h6>
+          <select name="date" class="date"  id="date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select data-connected-inputs name="date" class="date" id="year">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+            <option value="2033">2033</option>
+            
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
